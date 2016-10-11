@@ -6,8 +6,39 @@
 header {
   background-color: black;
 }
+a:visited{
+  color:#F2F2F2;
+}
+a:link{
+  text-decoration: none;
+}
+
+.navbar {
+  margin-top:-16px;
+  background: #A4A4A4;
+  height: 31px;
+}
+
+
+.navbar li {
+   text-align: center;
+   /*border: 1px solid black;*/
+   display:inline-block;
+   list-style: none;
+   width:150px;
+   padding:5px 13px; //adjust
+   font-size: 20px;
+   color: #F2F2F2;
+}
+
 
 #logo {
   display: block;
   margin: 0 auto;
+}
+
+.footer {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  clear:both;
 }
