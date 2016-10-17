@@ -1,0 +1,15 @@
+  <h1>Welcome to ShortURLS</h1>
+  <p>Submit an URL and we will shorten it for you!</p>
+  <% if @urls != nil then %>
+  <h2>Current links:</h2>
+    <% @urls.each do |url| %>
+    <p><%= p url %></p>
+    <% end %>
+  <% end %>
+
+   <form action="/urls" method="post" id="form1">
+    Ingresa tu link:
+    <br>
+    <input type="text" name="long_url">
+    <input type="submit" value="Short this URL!">
+  </form>
