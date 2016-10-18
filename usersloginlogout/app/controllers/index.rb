@@ -1,12 +1,28 @@
+enable :sessions
+
 get '/' do
   # La siguiente linea hace render de la vista 
   # que esta en app/views/index.erb
   erb :index
 end
 
-get '/login' do
+post '/login' do
+  user = User.authenticate(params[:email], params[:password])
+  if user != nil then
+    session["user"] ||= user.name
+    redirect '/userpage'
+  else
+    erb :login
+  end
+end
 
-  erb :login
+get '/logout' do
+    session["user"] = nil
+    erb :index
+end
+
+get '/login' do
+    erb :login
 end
 
 get '/register' do
@@ -14,12 +30,19 @@ get '/register' do
   erb :register
 end
 
-post '/userpage' do
-  user = User.authenticate(params[:email], params[:password])
-  if user != nil then
-    erb :userpage
-  else
+before '/userpage' do
+  if session["user"] == nil
     erb :index
+  else 
+    erb :userpage
+  end
+end
+
+get '/userpage' do
+    if session["user"] == nil
+    erb :index
+  else 
+    erb :userpage
   end
 end
 
