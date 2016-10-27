@@ -1,0 +1,109 @@
+.container {
+  margin: 0 auto;
+  width: 768px;
+}
+
+header {
+  background-color: black;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+a {
+  background-color: #999;
+  color: white;
+  display: block;
+  width: 182px;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  top: 600px;
+  padding: 20px 0;
+}
+
+#registration {
+  background-color: #BDBDBD;
+}
+
+#registration_phone {
+  width: 84%;
+  height:8%;
+  position:relative;
+  top: 75px;
+  border-radius: 5px;
+  border-color: transparent;
+
+}
+
+#interest_textarea {
+  width: 84%;
+  position:relative;
+  top:75px;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+#registration_btn {
+  width: 85%;
+  height: 10%;
+  border-radius: 5px;
+  border-color: transparent;
+  margin-bottom: 10px;
+  position: relative;
+  top: 80px;
+  background: #0080FF;
+  color: white;
+}
+
+#registration_form {
+  height: 450px;
+  margin-top: 100px;
+}
+
+#registration_name {
+  float: left;
+  height: 7%;
+  width: 37%;
+  position:relative;
+  left:58px;
+  top:40px;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+#registration_email {
+  float: right;
+  height: 7%;
+  width: 37%;
+  position:relative;
+  right:58px;
+  top:40px;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+.footer {
+  position: relative;
+  top:100px;
+}
