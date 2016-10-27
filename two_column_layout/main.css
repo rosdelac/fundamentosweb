@@ -29,6 +29,25 @@ header {
 
 }
 
+#basico {
+  float:left;
+  width: 30%;
+}
+
+#pro {
+  float:left;
+  width: 30%;
+}
+
+#platinum {
+  float:left;
+  width: 30%;
+}
+
+#erseccion {
+  margin-bottom: 20px;
+}
+
 img {
   margin-top: 40px;
   margin-bottom: 10px;
@@ -36,6 +55,11 @@ img {
 
 h3 {
   margin-top: 30px;
+}
+
+h2 {
+  position: relative;
+  top:20px;
 }
 
 .footer {
