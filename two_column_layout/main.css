@@ -1,0 +1,44 @@
+.container {
+  margin: 0 auto;
+  width: 750px;
+}
+
+header {
+  background-color: black;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.izquierda {
+  float: left;
+  width: 49%;
+  height: 250px;
+
+}
+.derecha {
+  float: right;
+  width: 49%;
+  height: 250px;
+
+}
+
+img {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+.footer {
+  position:relative;
+  top:50px;
+}
